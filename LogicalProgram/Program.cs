@@ -1,4 +1,6 @@
-﻿namespace LogicalProgram
+﻿using System.Diagnostics;
+
+namespace LogicalProgram
 {
     internal class Program
     {
@@ -16,7 +18,7 @@
                 //user input
                 int selection = Convert.ToInt32(Console.ReadLine());
                 //validating input 
-                while (selection < 1 || selection >= 6)
+                while (selection < 1 || selection > 7)
                 {
                     Console.WriteLine("Invalid input");
                     Console.WriteLine("Enter a proper selection");
@@ -49,11 +51,11 @@
                         CouponNumbers couponNumbers = new CouponNumbers();
                         couponNumbers.Coupon();
                         break;
-
-
-
-
-
+                    case 6:
+                        //
+                        StopWatch watch = new StopWatch();
+                        watch.StimulateStopWatch();
+                        break;
                 }
             }
         }
