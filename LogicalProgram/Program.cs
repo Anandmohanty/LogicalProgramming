@@ -42,11 +42,7 @@
                     ReverseNumber obj1 = new ReverseNumber();
                     obj1.Reverse(123);
                     break;
-                case 5:
-                    //Coupon Numbers
-                    CouponNumbers couponNumbers = new CouponNumbers();
-                    couponNumbers.Coupon();
-                    break;
+                
 
 
 
